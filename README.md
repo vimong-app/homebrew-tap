@@ -5,15 +5,13 @@ Homebrew tap for [Vimong](https://vimong.app/), a document viewer driven by Vim 
 ## Install
 
 ```sh
-brew install --cask vimong-app/tap/vimong
-```
-
-Or tap first, then install:
-
-```sh
 brew tap vimong-app/tap
+brew trust vimong-app/tap
 brew install --cask vimong
 ```
+
+Homebrew refuses to load casks from third-party taps until you trust them.
+To trust only this cask instead of the whole tap, use `brew trust --cask vimong-app/tap/vimong`.
 
 ## Update
 
