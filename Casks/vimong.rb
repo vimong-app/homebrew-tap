@@ -1,6 +1,6 @@
 cask "vimong" do
-  version "1.3.0"
-  sha256 "c6f5fcbdd2138dad91194078f4fc69e9a3ad5f450d42ac2b92ccdb072ec43805"
+  version "1.4.0"
+  sha256 "5168a2cb9b21036274bb304ae4971f76c5347819e58c891230189c138b8cad52"
 
   url "https://github.com/vimong-app/vimong/releases/download/v#{version}/Vimong_#{version}_aarch64.dmg"
   name "Vimong"
