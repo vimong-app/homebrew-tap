@@ -7,7 +7,7 @@ Homebrew tap for [Vimong](https://vimong.app/), a document viewer driven by Vim 
 ```sh
 brew tap vimong-app/tap
 brew trust vimong-app/tap
-brew install --cask vimong
+brew install -y --cask vimong
 ```
 
 Homebrew refuses to load casks from third-party taps until you trust them.
@@ -17,8 +17,10 @@ To trust only this cask instead of the whole tap, use `brew trust --cask vimong-
 
 ```sh
 brew update
-brew upgrade --cask vimong
+brew upgrade -y --cask vimong
 ```
+
+`-y` skips Homebrew's confirmation prompt (Homebrew 6.0+; drop it on older versions).
 
 ## Uninstall
 
